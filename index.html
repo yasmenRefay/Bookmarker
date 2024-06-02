@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css"/>
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap" rel="stylesheet">
+    <title>Bookmarker</title>
+</head>
+<body>
+<div class="container">
+    <div class="upper m-auto ">
+            <h1 class="main ">Bookmarker</h1>
+        </div>
+        <div class="body d-flex justify-content-center flex-column py-4 p-3 mt-5">
+            <h2 class="title text-center">
+                <i class="fa-solid fa-bookmark px-2"></i>Bookmark your favorite sites<i class="fa-solid fa-bookmark px-2"></i>
+            </h2>
+            <div class="inputs fw-semibold px-2 fs-6">
+                <div class="first py-4">
+                    <label for="wName" > <i class="fa-solid fa-book-bookmark pe-2 pb-2"></i>Site Name</label>
+                    <input id="wName" class="selectedInput w-100 form-control m-1" placeholder="Bookmark Name" />
+                </div>
+                <div class="second ">
+                    <label for="wUrl"> <i class="fa-solid fa-link pe-2 pb-2 "></i>Site URL</label>
+                    <input id="wUrl" class="selectedInput w-100 form-control m-1" placeholder="Website URL"  />
+                </div>
+            </div>
+            <button class="sub btn btn-danger m-auto mt-4 t" id="btnn">Submit</button>
+    </div>
+    <table class=" table text-center mt-4 ">
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="rowBody">
+        </tbody>
+    </table>
+</div>
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>   
+    <script src="./js/about.js"></script>
+</body>
+</html>
