@@ -30,7 +30,7 @@ function display() {
     for (i=0 ; i<datalist.length ; i++) {
         cartona += `
         <tr>
-            <td><div>${i}</div></td>
+            <td><div>${i+1}</div></td>
             <td><div>${datalist[i].siteName}</div></td>
             <td><button onclick="visit(${i})" class="eye btn"><i class=" fa-solid fa-eye px-2"></i>visit</button></td>
             <td><button onclick="deleteit(${i})"   class="trash btn btn-danger "><i class="fa-solid fa-trash px-2"></i>Delete</button></td>
