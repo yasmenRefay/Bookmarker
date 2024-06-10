@@ -27,7 +27,7 @@ if(localStorage.getItem('items') !==null ) {
 
 function display() {
     var cartona = `` ;
-    for (i=1 ; i<datalist.length ; i++) {
+    for (i=0 ; i<datalist.length ; i++) {
         cartona += `
         <tr>
             <td><div>${i}</div></td>
@@ -69,17 +69,20 @@ for (var i=0 ; i<selected.length ; i++ ) {
 }
 function  validation(elemId,elemValue) {
     var regex = {
-        wName:/^[A-Z][a-z]{3,10}$/,
+        wName:/^[A-Z][a-z]{3,}$/,
         wUrl:/^(ftp|http|https):\/\/[^ "]+$/,
     }
     var elm = document.getElementById(elemId);
+    var alert = elm.nextElementSibling ;
     if(regex[elemId].test(elemValue)) {
         elm.classList.add('is-valid')
         elm.classList.remove('is-invalid')
+        alert.classList.replace('d-block','d-none')
         return true ;
     }else {
         elm.classList.add('is-invalid')
         elm.classList.remove('is-valid')
+        alert.classList.replace('d-none','d-block')
         return false ;
     }
 

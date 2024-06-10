@@ -24,10 +24,16 @@
                 <div class="first py-4">
                     <label for="wName" > <i class="fa-solid fa-book-bookmark pe-2 pb-2"></i>Site Name</label>
                     <input id="wName" class="selectedInput w-100 form-control m-1" placeholder="Bookmark Name" />
+                    <div class="alert alert-danger py-1 d-none my-2">
+                        <small>please,inter the first latter capital </small>
+                    </div>
                 </div>
                 <div class="second ">
                     <label for="wUrl"> <i class="fa-solid fa-link pe-2 pb-2 "></i>Site URL</label>
                     <input id="wUrl" class="selectedInput w-100 form-control m-1" placeholder="Website URL"  />
+                    <div class="alert alert-danger py-1 d-none my-2">
+                        <small>please,start with (ftp|http|https) </small>
+                    </div>
                 </div>
             </div>
             <button class="sub btn btn-danger m-auto mt-4 t" id="btnn">Submit</button>
